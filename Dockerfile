@@ -37,7 +37,7 @@ RUN mkdir -p /opt/app
 ADD cert /etc/ssl/cert
 ADD privkey /etc/ssl/privkey
 
-#working directory
+#working directory l
 WORKDIR /opt/app
 ADD . /opt/app
 RUN npm install
