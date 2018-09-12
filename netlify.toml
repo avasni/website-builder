@@ -4,3 +4,9 @@ ID = "Staging-I"
   # This will be your default build command
   command = "npm run build"
   publish = "dist"
+
+[[redirects]]
+  from = "/login"
+  to = "/index.html"
+  status = 200
+  force = true
