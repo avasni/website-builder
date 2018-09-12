@@ -12,20 +12,16 @@ ID = "Staging-I"
 #  force = true
 
 [[redirects]]
-  from = "/"
-  to = "/"
+  from = "/*"
+  to = "/index.html"
   status = 301
-  force = false
+  force = true
+  
 [[redirects]]
   from = "/login"
   to = "/index.html"
   status = 301
-  force = false
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 301
-  force = false  
+  force = true
   
   
 [build.environment]
