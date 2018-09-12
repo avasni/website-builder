@@ -11,14 +11,14 @@ ID = "Staging-I"
 #  status = 200
 #  force = true
 
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 301
-  force = true
+#[[redirects]]
+#  from = "/*"
+#  to = "/index.html"
+#  status = 301
+#  force = true
   
 [[redirects]]
-  from = "/login"
+  from = "/:page"
   to = "/index.html"
   status = 301
   force = true
