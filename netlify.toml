@@ -5,11 +5,28 @@ ID = "Staging-I"
   command = "npm run build"
   publish = "dist"
 
+#[[redirects]]
+#  from = "/"
+#  to = "/index.html"
+#  status = 200
+#  force = true
+
+[[redirects]]
+  from = "/"
+  to = "/"
+  status = 301
+  force = false
 [[redirects]]
   from = "/login"
   to = "/index.html"
-  status = 200
-  force = true
+  status = 301
+  force = false
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 301
+  force = false  
+  
   
 [build.environment]
   domainkey = "flowzdigital.com"  
